@@ -75,7 +75,7 @@ int main()
 
 
 	
-	cout << "Press any key to end." << endl;
+	cout << "Enter any key to end." << endl;
 	cin >> anykey;
     return 0;
 }
