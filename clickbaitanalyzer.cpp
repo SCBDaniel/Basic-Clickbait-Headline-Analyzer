@@ -9,8 +9,9 @@ int checkHeadline(string headline) {
 	ifstream headlineFile("headlineterms.txt");
 	string temp;
 	int count=0;
-
-	for (int i = 0; i <= 99999; i++) {
+	
+	//adjust "i<=100" below to match your data size
+	for (int i = 0; i <= 100; i++) {
 		headlineFile >> temp;
 		if (headline.find(temp) != string::npos) {
 			count++;
@@ -26,8 +27,9 @@ int checkDomain(string domain) {
 	ifstream domainFile("domains.txt");
 	string temp;
 	int percent=0;
-
-	for (int i = 0; i <= 99999; i++) {
+	
+	//adjust "i<=100" below to match your data size
+	for (int i = 0; i <= 100; i++) {
 		domainFile >> temp;
 		if (domain.find(temp) != string::npos) {
 			domainFile >> percent;
